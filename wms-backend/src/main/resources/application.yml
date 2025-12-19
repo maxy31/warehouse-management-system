@@ -1,0 +1,16 @@
+server:
+  port: 8090
+
+spring:
+  application:
+    name: wms
+  datasource:
+#   need to be changed if db is changed
+    url: "jdbc:mysql://localhost:3306/wms_project?useUnicode=true&characterEncoding=UTF-8&useSSL=false&serverTimezone=Asia/Kuala_Lumpur&allowPublicKeyRetrieval=true"
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    password: SY6880
+
+mybatis-plus:
+#  track mapper location
+  mapper-locations: classpath:mappers/*.xml
